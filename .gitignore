@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/*
+**/__pycache__/*
+**/results
+*.pkl
+pyrightconfig.json
+*.csv
+*.cbm
+.idea

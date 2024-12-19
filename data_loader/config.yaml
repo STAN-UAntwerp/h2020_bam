@@ -1,0 +1,26 @@
+target: DTIC_mass2 
+
+test_size: 0.2 # only used in case of train test split
+validation_size: 0.2
+
+categorical_var: [] 
+numerical_var: [
+   aimed_flow_rate, watering_frequency, 
+   aimed_biochar_mass,
+   B(B)_SA, B(L)_SA, Dunite_SA, Steelslag_SA, 
+   worm_nbr, dead_worm_nbr, chlorotica_ratio, dead_chlorotica_ratio, # earthworms
+   laccase_conc, urease_conc, 
+   anhydrase_conc, # enzymes
+   inoculum_density_K_petricola, inoculum_density_A_pullulans, 
+   inoculum_density_S_variegatus, # fungi
+   inoculum_density_B_subtilis, inoculum_density_C_metallidurans, # bacteria
+   # extra additions
+   
+]
+boolean_var: [
+  straw, digestate, alfalfa, # organic matter
+  premix, sterile, 
+  phosphorus01, ammonium_chloride01, # extra additions
+  halftime_inoculation, mineral+biochar_mass01, 
+  grain_size_mixing, urea01
+] 
